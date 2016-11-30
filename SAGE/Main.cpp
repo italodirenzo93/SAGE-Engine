@@ -19,7 +19,7 @@ int main(int argc, char* argv[])
 	_CrtSetDbgFlag(dbgFlags);
 #endif // _WIN32 && _DEBUG
 	try {
-		std::unique_ptr<cGame> game(new cMyGame);
+		std::unique_ptr<SAGE::cGame> game(new cMyGame);
 		game->Run();
 	}
 	catch (std::exception const& e) {

@@ -5,16 +5,19 @@
 #include <map>
 #include <GL/glew.h>
 
-class cShaderManager
+namespace SAGE
 {
-public:
-	cShaderManager();
-	~cShaderManager();
-	GLuint LoadShader(GLenum type, const char* key, const char* filename);
-	GLuint CreateProgram(const char* vertKey, const char* fragKey);
+	class cShaderManager
+	{
+	public:
+		cShaderManager();
+		~cShaderManager();
+		GLuint LoadShader(GLenum type, const char* key, const char* filename);
+		GLuint CreateProgram(const char* vertKey, const char* fragKey);
 
-private:
-	std::map<std::string, GLuint>		m_shaders;
-};
+	private:
+		std::map<std::string, GLuint>		m_shaders;
+	};
+}
 
 #endif

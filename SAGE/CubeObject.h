@@ -5,17 +5,20 @@
 #include "MeshManager.h"
 #include "Renderer.h"
 
-class cCubeObject : public cSceneNode
+namespace SAGE
 {
-public:
-	cCubeObject(iRenderer& renderer);
-	~cCubeObject();
-	void OnRender() override;
+	class cCubeObject : public cSceneNode
+	{
+	public:
+		cCubeObject(iRenderer& renderer);
+		~cCubeObject();
+		void OnRender() override;
 
-private:
-	iRenderer&		m_renderer;
-	cMeshInfo		m_meshInfo;
-	GLuint			m_textureID;
-};
+	private:
+		iRenderer&		m_renderer;
+		cMeshInfo		m_meshInfo;
+		GLuint			m_textureID;
+	};
+}
 
 #endif

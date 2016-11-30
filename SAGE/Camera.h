@@ -5,33 +5,36 @@
 #include <glm/gtx/transform.hpp>
 #include <GL/glew.h>
 
-enum eCameraProjection
+namespace SAGE
 {
-	Projection,
-	Orthographic
-};
+	enum eCameraProjection
+	{
+		Projection,
+		Orthographic
+	};
 
-class cCamera {
-	GLuint		_mvpID;
+	class cCamera {
+		GLuint		_mvpID;
 
-	glm::mat4	_projection;
-	glm::mat4	_view;
-	glm::mat4	_model;
+		glm::mat4	_projection;
+		glm::mat4	_view;
+		glm::mat4	_model;
 
-	float		_fov;
-	float		_nearPlane;
-	float		_farPlane;
+		float		_fov;
+		float		_nearPlane;
+		float		_farPlane;
 
-	glm::vec3	_position;
-	glm::vec3	_target;
-public:
-	cCamera(GLuint, GLsizei, GLsizei);
-	~cCamera();
+		glm::vec3	_position;
+		glm::vec3	_target;
+	public:
+		cCamera(GLuint, GLsizei, GLsizei);
+		~cCamera();
 
-	void Update() const;
+		void Update() const;
 
-	void Translate(float, float, float);
-	void Viewport(GLint, GLint, GLsizei, GLsizei);
-};
+		void Translate(float, float, float);
+		void Viewport(GLint, GLint, GLsizei, GLsizei);
+	};
+}
 
 #endif

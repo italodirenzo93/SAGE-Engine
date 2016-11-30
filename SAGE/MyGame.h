@@ -9,7 +9,7 @@
 
 #include <GL/glew.h>
 
-class cMyGame : public cGame
+class cMyGame : public SAGE::cGame
 {
 public:
 	cMyGame();
@@ -21,11 +21,11 @@ protected:
 	void ProcessEvents(SDL_Event const& ev) override;
 
 private:
-	std::unique_ptr<cShaderManager>	m_pShaderManager;
+	std::unique_ptr<SAGE::cShaderManager>	m_pShaderManager;
 	GLuint							m_shaderProgram;
 
-	std::unique_ptr<cCamera>		m_pCamera;
-	std::unique_ptr<cSceneNode>		m_pSceneGraph;
+	std::unique_ptr<SAGE::cCamera>		m_pCamera;
+	std::unique_ptr<SAGE::cSceneNode>		m_pSceneGraph;
 };
 
 #endif

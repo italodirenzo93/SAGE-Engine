@@ -5,17 +5,21 @@
 #include "SceneNode.h"
 #include "Renderer.h"
 
-class cTriangleObject : public cSceneNode {
-	GLuint	_vertexArrayID;
-	GLuint	_vertexBufferID;
-	GLint	_numIndices;
-	GLuint _colorBufferID;
-	iRenderer& m_renderer;
-public:
-	cTriangleObject(iRenderer& renderer);
-	~cTriangleObject();
+namespace SAGE
+{
+	class cTriangleObject : public cSceneNode
+	{
+		GLuint	_vertexArrayID;
+		GLuint	_vertexBufferID;
+		GLint	_numIndices;
+		GLuint _colorBufferID;
+		iRenderer& m_renderer;
+	public:
+		cTriangleObject(iRenderer& renderer);
+		~cTriangleObject();
 
-	void OnRender() override;
-};
+		void OnRender() override;
+	};
+}
 
 #endif

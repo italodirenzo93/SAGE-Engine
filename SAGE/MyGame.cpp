@@ -1,8 +1,8 @@
 #include "MyGame.h"
 #include "GLRenderer.h"
-
 #include "CubeObject.h"
 #include "TriangleObject.h"
+using namespace SAGE;
 
 #include <iostream>
 
