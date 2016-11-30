@@ -25,6 +25,8 @@ public:
 	void SetViewMatrix(glm::mat4 const& vm);
 	void SetWorldMatrix(glm::mat4 const& wm);
 
+	void SetVertexBuffer(GLuint buffer, GLsizei size);
+
 	void Apply();
 
 private:
@@ -33,6 +35,9 @@ private:
 	GLuint			m_vertexShaderID;
 	GLuint			m_fragmentShaderID;
 	GLuint			m_programID;
+
+	// Attribute locations
+	GLuint const	m_vertexArrayID;
 
 	// Matrices
 	glm::mat4		m_matProjection;

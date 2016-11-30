@@ -2,7 +2,9 @@
 #include <string>
 #include <fstream>
 
-cGpuProgram::cGpuProgram(cGLRenderer& renderer) : m_renderer(renderer)
+cGpuProgram::cGpuProgram(cGLRenderer& renderer) : 
+	m_renderer(renderer),
+	m_vertexArrayID(0)
 {
 	std::string line = "";
 
@@ -72,6 +74,15 @@ void cGpuProgram::SetWorldMatrix(glm::mat4 const& wm)
 	glUniformMatrix4fv(m_worldUniform, 1, GL_FALSE, &m_matWorld[0][0]);
 }
 
+void cGpuProgram::SetVertexBuffer(GLuint buffer, GLsizei size)
+{
+	glEnableVertexAttribArray(m_vertexArrayID);
+	glBindBuffer(GL_ARRAY_BUFFER, buffer);
+	glVertexAttribPointer(m_vertexArrayID, 3, GL_FLOAT, GL_FALSE, 0, 0);
+	glDisableVertexAttribArray(m_vertexArrayID);
+}
+
 void cGpuProgram::Apply()
 {
+	glUseProgram(m_programID);
 }

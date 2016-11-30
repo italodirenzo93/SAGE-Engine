@@ -1,5 +1,3 @@
-#ifdef _WIN32
-
 #include "D3DRenderer.h"
 #include <SDL.h>
 #include <SDL_syswm.h>
@@ -106,5 +104,3 @@ void cD3DRenderer::DrawPrimitives(ePrimitiveType type, int start, int count)
 	}
 	m_context->Draw(count, start);
 }
-
-#endif

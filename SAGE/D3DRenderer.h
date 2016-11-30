@@ -1,5 +1,3 @@
-#ifdef _WIN32
-
 #pragma once
 
 #define WIN32_LEAN_AND_MEAN
@@ -31,5 +29,3 @@ private:
 	IDXGISwapChain*				m_swapChain;
 	ID3D11RenderTargetView*		m_renderTarget;
 };
-
-#endif
