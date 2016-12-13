@@ -3,7 +3,8 @@
 
 #include <glm/glm.hpp>
 #include <glm/gtx/transform.hpp>
-#include <GL/glew.h>
+
+#include "GLBasicShaderProgram.h"
 
 namespace SAGE
 {
@@ -13,8 +14,18 @@ namespace SAGE
 		Orthographic
 	};
 
-	class cCamera {
-		GLuint		_mvpID;
+	class cCamera
+	{
+	public:
+		cCamera(cGLBasicShaderProgram&, GLsizei, GLsizei);
+		~cCamera();
+
+		void Update() const;
+
+		void Translate(float, float, float);
+		void Viewport(GLint, GLint, GLsizei, GLsizei);
+	private:
+		cGLBasicShaderProgram&	m_shaderProgram;
 
 		glm::mat4	_projection;
 		glm::mat4	_view;
@@ -26,14 +37,6 @@ namespace SAGE
 
 		glm::vec3	_position;
 		glm::vec3	_target;
-	public:
-		cCamera(GLuint, GLsizei, GLsizei);
-		~cCamera();
-
-		void Update() const;
-
-		void Translate(float, float, float);
-		void Viewport(GLint, GLint, GLsizei, GLsizei);
 	};
 }
 

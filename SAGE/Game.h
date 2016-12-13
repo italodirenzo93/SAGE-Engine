@@ -37,7 +37,6 @@ namespace SAGE
 		SDL_Event						m_event;
 		std::string						m_title;
 		bool							m_running;
-		Uint32							m_prevFrameTime;
 		std::unique_ptr<iRenderer>		m_pRenderer;
 	};
 }

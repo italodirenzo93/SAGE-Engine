@@ -6,6 +6,7 @@
 #include "ShaderManager.h"
 #include "Camera.h"
 #include "SceneNode.h"
+#include "GLBasicShaderProgram.h"
 
 #include <GL/glew.h>
 
@@ -21,8 +22,7 @@ protected:
 	void ProcessEvents(SDL_Event const& ev) override;
 
 private:
-	std::unique_ptr<SAGE::cShaderManager>	m_pShaderManager;
-	GLuint							m_shaderProgram;
+	std::unique_ptr<SAGE::cGLBasicShaderProgram>	m_shaderProgram;
 
 	std::unique_ptr<SAGE::cCamera>		m_pCamera;
 	std::unique_ptr<SAGE::cSceneNode>		m_pSceneGraph;

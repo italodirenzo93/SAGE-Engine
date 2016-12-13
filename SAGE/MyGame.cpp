@@ -9,15 +9,10 @@ using namespace SAGE;
 cMyGame::cMyGame() : Super(800, 600, false, "SAGE Engine by Italo Di Renzo") // SAGE - Sweet....Another Game Engine
 {
 	// Load shaders
-	m_pShaderManager = std::make_unique<cShaderManager>();
-	m_pShaderManager->LoadShader(GL_VERTEX_SHADER, "Vertex", "../Shaders/VertexShader.glsl");
-	m_pShaderManager->LoadShader(GL_FRAGMENT_SHADER, "Fragment", "../Shaders/FragmentShader.glsl");
-	m_shaderProgram = m_pShaderManager->CreateProgram("Vertex", "Fragment");
-	glUseProgram(m_shaderProgram);
+	m_shaderProgram = std::make_unique<cGLBasicShaderProgram>();
 
 	// Set up camera
-	GLuint matrixID = glGetUniformLocation(m_shaderProgram, "MVP");
-	m_pCamera = std::make_unique<cCamera>(matrixID, GetWindowWidth(), GetWindowHeight());
+	m_pCamera = std::make_unique<cCamera>(*m_shaderProgram, GetWindowWidth(), GetWindowHeight());
 
 	// Create game objects
 	m_pSceneGraph = std::make_unique<cSceneNode>();
@@ -60,6 +55,7 @@ void cMyGame::Draw()
 	renderer.Clear(0.0f, 0.0f, 0.1f, 1.0f);
 
 	// Draw stuff
+	m_shaderProgram->Apply();
 	m_pSceneGraph->RenderNodes();
 
 	renderer.Present();

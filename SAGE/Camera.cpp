@@ -2,8 +2,8 @@
 
 namespace SAGE
 {
-	cCamera::cCamera(GLuint matrixLocation, GLsizei width, GLsizei height) :
-		_mvpID(matrixLocation),
+	cCamera::cCamera(cGLBasicShaderProgram& program, GLsizei width, GLsizei height) :
+		m_shaderProgram(program),
 		_fov(45.0f),
 		_nearPlane(0.1f),
 		_farPlane(100.0f),
@@ -31,9 +31,11 @@ namespace SAGE
 
 	}
 
-	void cCamera::Update() const {
-		glm::mat4 MVP = _projection * _view * _model;
-		glUniformMatrix4fv(_mvpID, 1, GL_FALSE, &MVP[0][0]);
+	void cCamera::Update() const
+	{
+		m_shaderProgram.SetProjectionMatrix(_projection);
+		m_shaderProgram.SetViewMatrix(_view);
+		m_shaderProgram.SetWorldMatrix(_model);
 	}
 
 	void cCamera::Translate(float x, float y, float z) {

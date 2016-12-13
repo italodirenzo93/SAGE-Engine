@@ -159,7 +159,9 @@
     <ClCompile Include="D3DRenderer.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GLRenderer.cpp" />
-    <ClCompile Include="GpuProgram.cpp" />
+    <ClCompile Include="GLShader.cpp" />
+    <ClCompile Include="GLBasicShaderProgram.cpp" />
+    <ClCompile Include="GLShaderProgram.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MeshManager.cpp" />
     <ClCompile Include="MyGame.cpp" />
@@ -174,7 +176,9 @@
     <ClInclude Include="D3DRenderer.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GLRenderer.h" />
-    <ClInclude Include="GpuProgram.h" />
+    <ClInclude Include="GLBasicShaderProgram.h" />
+    <ClInclude Include="GLShader.h" />
+    <ClInclude Include="GLShaderProgram.h" />
     <ClInclude Include="MeshManager.h" />
     <ClInclude Include="MyGame.h" />
     <ClInclude Include="Renderer.h" />

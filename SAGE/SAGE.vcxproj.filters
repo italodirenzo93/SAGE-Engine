@@ -1,110 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="Camera.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CubeObject.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="GLBasicShaderProgram.cpp">
+      <Filter>Graphics</Filter>
     </ClCompile>
     <ClCompile Include="D3DRenderer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Graphics</Filter>
     </ClCompile>
     <ClCompile Include="GLRenderer.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="GpuProgram.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="GLShader.cpp">
+      <Filter>Graphics</Filter>
     </ClCompile>
     <ClCompile Include="MeshManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MyGame.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneNode.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Graphics</Filter>
     </ClCompile>
     <ClCompile Include="ShaderManager.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="TestModel.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TriangleObject.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CubeObject.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MyGame.cpp" />
+    <ClCompile Include="SceneNode.cpp" />
+    <ClCompile Include="TestModel.cpp" />
+    <ClCompile Include="TriangleObject.cpp" />
+    <ClCompile Include="GLShaderProgram.cpp">
+      <Filter>Graphics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Camera.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CubeObject.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="D3DRenderer.h">
-      <Filter>Header Files</Filter>
+      <Filter>Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="Game.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="GLBasicShaderProgram.h">
+      <Filter>Graphics</Filter>
     </ClInclude>
     <ClInclude Include="GLRenderer.h">
-      <Filter>Header Files</Filter>
+      <Filter>Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="GpuProgram.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="GLShader.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GLShaderProgram.h">
+      <Filter>Graphics</Filter>
     </ClInclude>
     <ClInclude Include="MeshManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MyGame.h">
-      <Filter>Header Files</Filter>
+      <Filter>Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Renderer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneNode.h">
-      <Filter>Header Files</Filter>
+      <Filter>Graphics</Filter>
     </ClInclude>
     <ClInclude Include="ShaderManager.h">
-      <Filter>Header Files</Filter>
+      <Filter>Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="TestModel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TriangleObject.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CubeObject.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="MyGame.h" />
+    <ClInclude Include="SceneNode.h" />
+    <ClInclude Include="TestModel.h" />
+    <ClInclude Include="TriangleObject.h" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{5dceae84-7646-4744-8dd8-18c3fdaa0f6d}</UniqueIdentifier>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{f7d3ac0c-ef35-4fef-b811-e242adfad0f4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{16bf36a7-4ab4-46cc-b303-f3ab081c8d02}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Shaders">
+    <Filter Include="Graphics\Shaders">
       <UniqueIdentifier>{82306146-dd49-44d1-bc98-e3e67200a435}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Shaders\BasicFragmentShader.glsl">
-      <Filter>Shaders</Filter>
+      <Filter>Graphics\Shaders</Filter>
     </None>
     <None Include="..\Shaders\BasicVertexShader.glsl">
-      <Filter>Shaders</Filter>
+      <Filter>Graphics\Shaders</Filter>
     </None>
     <None Include="..\Shaders\FragmentShader.glsl">
-      <Filter>Shaders</Filter>
+      <Filter>Graphics\Shaders</Filter>
     </None>
     <None Include="..\Shaders\VertexShader.glsl">
-      <Filter>Shaders</Filter>
+      <Filter>Graphics\Shaders</Filter>
     </None>
   </ItemGroup>
 </Project>

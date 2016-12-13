@@ -3,7 +3,6 @@
 
 #ifdef _WIN32
 #include "D3DRenderer.h"
-#include <SDL_syswm.h>
 #endif
 
 namespace SAGE
@@ -57,7 +56,7 @@ namespace SAGE
 	void cGame::Run()
 	{
 		m_running = true;
-		m_prevFrameTime = SDL_GetTicks();
+		auto prevFrameTime = SDL_GetTicks();
 		while (m_running)
 		{
 			while (SDL_PollEvent(&m_event))
@@ -67,13 +66,13 @@ namespace SAGE
 
 			// Calculate delta time
 			auto frameTime = SDL_GetTicks();
-			float deltaTime = (frameTime - m_prevFrameTime) / 1000.0f;	// as seconds
+			float deltaTime = (frameTime - prevFrameTime) / 1000.0f;	// as seconds
 
 			// Render frame
 			Update(deltaTime);
 			Draw();
 
-			m_prevFrameTime = frameTime;
+			prevFrameTime = frameTime;
 		} // end while
 	}
 

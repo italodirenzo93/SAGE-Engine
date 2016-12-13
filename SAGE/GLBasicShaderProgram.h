@@ -1,23 +1,20 @@
-#ifndef __GPUPROGRAM_H__
-#define __GPUPROGRAM_H__
-
-/*
-	Currently implemented in OpenGL. Like a lot of things in this project,
-	it will also eventually be abstracted and include a Direct3D backend.
-*/
+#ifndef __GLBASICSHADERPROGRAM_H__
+#define __GLBASICSHADERPROGRAM_H__
 
 #include <GL/glew.h>
 #include <glm/glm.hpp>
 
-#include "GLRenderer.h"
+#include "GLShaderProgram.h"
+
+#include <memory>
 
 namespace SAGE
 {
-	class cGpuProgram
+	class cGLBasicShaderProgram : public cGLShaderProgram
 	{
 	public:
-		cGpuProgram(cGLRenderer& renderer);
-		~cGpuProgram();
+		cGLBasicShaderProgram();
+		~cGLBasicShaderProgram();
 
 		glm::mat4 GetProjectionMatrix() const { return m_matProjection; }
 		glm::mat4 GetViewMatrix() const { return m_matView; }
@@ -29,14 +26,9 @@ namespace SAGE
 
 		void SetVertexBuffer(GLuint buffer, GLsizei size);
 
-		void Apply();
-
 	private:
-		cGLRenderer&	m_renderer;
-
-		GLuint			m_vertexShaderID;
-		GLuint			m_fragmentShaderID;
-		GLuint			m_programID;
+		std::shared_ptr<cGLShader>	m_vertShader;
+		std::shared_ptr<cGLShader>	m_fragShader;
 
 		// Attribute locations
 		GLuint const	m_vertexArrayID;
@@ -52,4 +44,4 @@ namespace SAGE
 	};
 }
 
-#endif // __GPUPROGRAM_H__
+#endif // __GLBASICSHADERPROGRAM_H__
