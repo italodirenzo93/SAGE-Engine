@@ -163,11 +163,8 @@
     <ClCompile Include="GLBasicShaderProgram.cpp" />
     <ClCompile Include="GLShaderProgram.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="MeshManager.cpp" />
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="SceneNode.cpp" />
-    <ClCompile Include="ShaderManager.cpp" />
-    <ClCompile Include="TestModel.cpp" />
     <ClCompile Include="TriangleObject.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -179,12 +176,9 @@
     <ClInclude Include="GLBasicShaderProgram.h" />
     <ClInclude Include="GLShader.h" />
     <ClInclude Include="GLShaderProgram.h" />
-    <ClInclude Include="MeshManager.h" />
     <ClInclude Include="MyGame.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="SceneNode.h" />
-    <ClInclude Include="ShaderManager.h" />
-    <ClInclude Include="TestModel.h" />
     <ClInclude Include="TriangleObject.h" />
   </ItemGroup>
   <ItemGroup>

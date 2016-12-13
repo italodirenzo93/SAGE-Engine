@@ -2,88 +2,97 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="GLBasicShaderProgram.cpp">
-      <Filter>Graphics</Filter>
+      <Filter>Engine\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="D3DRenderer.cpp">
-      <Filter>Graphics</Filter>
+      <Filter>Engine\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="GLRenderer.cpp">
-      <Filter>Graphics</Filter>
+      <Filter>Engine\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="GLShader.cpp">
-      <Filter>Graphics</Filter>
+      <Filter>Engine\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="MeshManager.cpp">
-      <Filter>Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="ShaderManager.cpp">
-      <Filter>Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="CubeObject.cpp" />
-    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MyGame.cpp" />
-    <ClCompile Include="SceneNode.cpp" />
-    <ClCompile Include="TestModel.cpp" />
-    <ClCompile Include="TriangleObject.cpp" />
     <ClCompile Include="GLShaderProgram.cpp">
-      <Filter>Graphics</Filter>
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="CubeObject.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneNode.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="TriangleObject.cpp">
+      <Filter>Engine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D3DRenderer.h">
-      <Filter>Graphics</Filter>
+      <Filter>Engine\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="GLBasicShaderProgram.h">
-      <Filter>Graphics</Filter>
+      <Filter>Engine\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="GLRenderer.h">
-      <Filter>Graphics</Filter>
+      <Filter>Engine\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="GLShader.h">
-      <Filter>Graphics</Filter>
+      <Filter>Engine\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="GLShaderProgram.h">
-      <Filter>Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="MeshManager.h">
-      <Filter>Graphics</Filter>
+      <Filter>Engine\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Renderer.h">
-      <Filter>Graphics</Filter>
+      <Filter>Engine\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="ShaderManager.h">
-      <Filter>Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="Camera.h" />
-    <ClInclude Include="CubeObject.h" />
-    <ClInclude Include="Game.h" />
     <ClInclude Include="MyGame.h" />
-    <ClInclude Include="SceneNode.h" />
-    <ClInclude Include="TestModel.h" />
-    <ClInclude Include="TriangleObject.h" />
+    <ClInclude Include="Camera.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeObject.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneNode.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="TriangleObject.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Graphics">
+    <Filter Include="Engine">
+      <UniqueIdentifier>{0081d49d-a4fd-47ec-a574-3b7669c311a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Graphics">
       <UniqueIdentifier>{f7d3ac0c-ef35-4fef-b811-e242adfad0f4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Graphics\Shaders">
+    <Filter Include="Engine\Graphics\Shaders">
       <UniqueIdentifier>{82306146-dd49-44d1-bc98-e3e67200a435}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Shaders\BasicFragmentShader.glsl">
-      <Filter>Graphics\Shaders</Filter>
+      <Filter>Engine\Graphics\Shaders</Filter>
     </None>
     <None Include="..\Shaders\BasicVertexShader.glsl">
-      <Filter>Graphics\Shaders</Filter>
+      <Filter>Engine\Graphics\Shaders</Filter>
     </None>
     <None Include="..\Shaders\FragmentShader.glsl">
-      <Filter>Graphics\Shaders</Filter>
+      <Filter>Engine\Graphics\Shaders</Filter>
     </None>
     <None Include="..\Shaders\VertexShader.glsl">
-      <Filter>Graphics\Shaders</Filter>
+      <Filter>Engine\Graphics\Shaders</Filter>
     </None>
   </ItemGroup>
 </Project>

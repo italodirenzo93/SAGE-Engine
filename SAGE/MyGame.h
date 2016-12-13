@@ -2,13 +2,9 @@
 #define __MYGAME_H__
 
 #include "Game.h"
-#include "Renderer.h"
-#include "ShaderManager.h"
 #include "Camera.h"
 #include "SceneNode.h"
 #include "GLBasicShaderProgram.h"
-
-#include <GL/glew.h>
 
 class cMyGame : public SAGE::cGame
 {

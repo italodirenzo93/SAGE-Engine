@@ -6,6 +6,14 @@
 #include <vector>
 #include <memory>
 
+/*
+	This class is intended to act as a base for creating your own shader programs and not to be
+	instantiated directly.
+	The idea is to have this class act as an interface into your GLSL program and implement additional
+	methods to access GLSL parameters.
+	ex. SetProjectionMatrix(), SetVertexBuffer(), etc.
+*/
+
 namespace SAGE
 {
 	class cGLShaderProgram
