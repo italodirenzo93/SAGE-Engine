@@ -33,6 +33,9 @@
     <ClCompile Include="TriangleObject.cpp">
       <Filter>Engine</Filter>
     </ClCompile>
+    <ClCompile Include="MeshManager.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D3DRenderer.h">
@@ -68,6 +71,9 @@
     </ClInclude>
     <ClInclude Include="TriangleObject.h">
       <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshManager.h">
+      <Filter>Engine\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

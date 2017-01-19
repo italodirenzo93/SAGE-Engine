@@ -71,23 +71,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\Code Libraries\glm;D:\Code Libraries\glew-2.0.0-win32\glew-2.0.0\include;D:\Code Libraries\SDL2-2.0.4\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Code Libraries\glew-2.0.0-win32\glew-2.0.0\lib\Release\Win32;D:\Code Libraries\SDL2-2.0.4\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)libs\glm\;$(SolutionDir)libs\glew-2.0.0-win32\glew-2.0.0\include\;$(SolutionDir)libs\SDL2-2.0.4\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)libs\glew-2.0.0-win32\glew-2.0.0\lib\Release\Win32\;$(SolutionDir)libs\SDL2-2.0.4\lib\x86\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\Code Libraries\glm;D:\Code Libraries\glew-2.0.0-win32\glew-2.0.0\include;D:\Code Libraries\SDL2-2.0.4\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Code Libraries\glew-2.0.0-win32\glew-2.0.0\lib\Release\x64;D:\Code Libraries\SDL2-2.0.4\lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)libs\glm\;$(SolutionDir)libs\glew-2.0.0-win32\glew-2.0.0\include\;$(SolutionDir)libs\SDL2-2.0.4\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)libs\glew-2.0.0-win32\glew-2.0.0\lib\Release\x64;$(SolutionDir)libs\SDL2-2.0.4\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>D:\Code Libraries\glm;D:\Code Libraries\glew-2.0.0-win32\glew-2.0.0\include;D:\Code Libraries\SDL2-2.0.4\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Code Libraries\glew-2.0.0-win32\glew-2.0.0\lib\Release\Win32;D:\Code Libraries\SDL2-2.0.4\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)libs\glm\;$(SolutionDir)libs\glew-2.0.0-win32\glew-2.0.0\include\;$(SolutionDir)libs\SDL2-2.0.4\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)libs\glew-2.0.0-win32\glew-2.0.0\lib\Release\Win32\;$(SolutionDir)libs\SDL2-2.0.4\lib\x86\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>D:\Code Libraries\glm;D:\Code Libraries\glew-2.0.0-win32\glew-2.0.0\include;D:\Code Libraries\SDL2-2.0.4\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Code Libraries\glew-2.0.0-win32\glew-2.0.0\lib\Release\x64;D:\Code Libraries\SDL2-2.0.4\lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)libs\glm\;$(SolutionDir)libs\glew-2.0.0-win32\glew-2.0.0\include\;$(SolutionDir)libs\SDL2-2.0.4\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)libs\glew-2.0.0-win32\glew-2.0.0\lib\Release\x64;$(SolutionDir)libs\SDL2-2.0.4\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -163,6 +163,7 @@
     <ClCompile Include="GLBasicShaderProgram.cpp" />
     <ClCompile Include="GLShaderProgram.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MeshManager.cpp" />
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="SceneNode.cpp" />
     <ClCompile Include="TriangleObject.cpp" />
@@ -176,6 +177,7 @@
     <ClInclude Include="GLBasicShaderProgram.h" />
     <ClInclude Include="GLShader.h" />
     <ClInclude Include="GLShaderProgram.h" />
+    <ClInclude Include="MeshManager.h" />
     <ClInclude Include="MyGame.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="SceneNode.h" />
