@@ -7,6 +7,9 @@
 *.suo
 *.user
 *.userosscache
+# Don't ignore the libs folder
+!libs/*
+
 *.sln.docstates
 *.vcxproj.filters
 

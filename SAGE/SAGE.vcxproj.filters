@@ -53,9 +53,6 @@
     <ClInclude Include="GLShaderProgram.h">
       <Filter>Engine\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="Renderer.h">
-      <Filter>Engine\Graphics</Filter>
-    </ClInclude>
     <ClInclude Include="MyGame.h" />
     <ClInclude Include="Camera.h">
       <Filter>Engine</Filter>
@@ -73,6 +70,9 @@
       <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="MeshManager.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
       <Filter>Engine\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
